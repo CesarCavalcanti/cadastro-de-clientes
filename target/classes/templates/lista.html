@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table table-hover" th:if="${lista != null && lista.size() > 0}">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="cliente : ${lista}">
+            <td>
+                <span th:text="${cliente.nome}"></span>
+            </td>
+            <td>
+                <span th:text="${cliente.email}"></span>
+            </td>
+            <td>
+                <a th:href="@{/cliente/editar/{email}(email=${cliente.email})}">Editar</a>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

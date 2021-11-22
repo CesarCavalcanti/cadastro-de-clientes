@@ -1,0 +1,8 @@
+com\example\cadastrodeclientes\model\repository\ClienteRepository.class
+com\example\cadastrodeclientes\model\service\ClienteService.class
+com\example\cadastrodeclientes\CadastroDeClientesApplication.class
+com\example\cadastrodeclientes\controller\ClienteController.class
+com\example\cadastrodeclientes\model\domain\Endereco.class
+com\example\cadastrodeclientes\model\service\AmazonS3service.class
+com\example\cadastrodeclientes\model\domain\Cliente.class
+com\example\cadastrodeclientes\model\repository\EnderecoRepository.class
